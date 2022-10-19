@@ -11,48 +11,7 @@ body,
     margin: 0;
 }
 
-.container > div {
-    margin: 0;
-}
-
-.header,
-.footer {
-    background-color: rgb(251, 252, 253);
-    height: 70px;
-    display: flex;
-    justify-content: space-between;
-    transition: 0.5s;
-}
-
-h1 {
-    margin: 15px 0px 15px 50px;
-    font-weight: bold;
-    letter-spacing: -1px;
-    font-size: 42px;
-}
-
-.nightmodeBtn {
-    border-radius: 10px;
-    margin-top: 18px;
-    margin-right: 40px;
-    height: 30px;
-    border: 2px solid gray;
-    padding: 3px;
-    transition: 0.2s;
-}
-
-.nightmodeBtn:hover {
-    background-color: rgb(177, 172, 187);
-}
-
-
-.main {
-    background-color: rgb(122, 219, 219);
-    flex-grow: 1;
-    transition: 0.5s;
-}
-
-#nextpage {
+#rightarrow {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -69,18 +28,88 @@ h1 {
     padding-bottom: 100px;
 }
 
-#nextpage:hover {
+
+.container > div {
+    margin: 0;
+    transition: 0.5s;
+}
+
+.header,
+.footer {
+    background-color: rgb(251, 252, 253);
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.5s;
+}
+
+h1 {
+    margin: 15px 0px 15px 50px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 42px;
+}
+
+.nightmodeBtn {
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-right: 40px;
+    height: 30px;
+    border: 2px solid gray;
+    padding: 3px;
+    transition: 0.2s;
+}
+
+.linkcontainer {
+    background-color: rgb(122, 219, 219);
+    padding-left: 90px;
+    padding-top: 20px;
+    display: flex;
+    gap: 80px;
+    text-align: center;
+}
+
+.linkcontainer > div {
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: default;
+}
+
+.main {
+    background-color: rgb(122, 219, 219);
+    flex-grow: 1;
+    transition: 0.5s;
+}
+
+.footer {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.madewith {
+    font-size: 13px;
+    text-decoration: underline;
+}
+
+/*Pseudo-classes*/
+
+.nightmodeBtn:hover {
+    background-color: rgb(177, 172, 187);
+}
+
+#rightarrow:hover {
     color: rgb(99, 100, 100);
 }
 
-.footer > div {
-    font-size: 24px;
-    margin: 15px 0px 15px 50px;
+.nightmodeBtnSwitch:hover {
+    background-color: #efeff0;
 }
+
+/*Toggle classes*/
 
 .nightmode {
     background-color: #00111c;
-    height: 70px;
     display: flex;
     justify-content: space-between;
     transition: 0.5s;
@@ -92,10 +121,7 @@ h1 {
     transition: 0.5s;
 }
 
-.nightmodeBtnSwitch:hover {
-    background-color: #efeff0;
-}
-
 .mainNightmode {
     background-color: #00253e;
+    color: #d4d7da;
 }
