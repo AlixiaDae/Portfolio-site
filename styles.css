@@ -21,13 +21,27 @@ body,
     background-color: transparent;
     position: fixed;
     right: 0;
+    top: 70px;
     border-style: none;
     transition: 0.5s;
-    color: rgb(116, 172, 172);
-    margin-top: 70px;
-    padding-bottom: 100px;
+    color: #74acac;
 }
 
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 1px;
+    background-color: transparent;
+    position: fixed;
+    right: 30px;
+    top: 420px;
+    border-style: none;
+    transition: 0.5s;
+    color: #67979700;
+}
 
 .container > div {
     margin: 0;
@@ -36,7 +50,7 @@ body,
 
 .header,
 .footer {
-    background-color: rgb(251, 252, 253);
+    background-color: #fbfcfd;
     height: 70px;
     display: flex;
     align-items: center;
@@ -55,14 +69,15 @@ h1 {
     border-radius: 10px;
     margin-top: 18px;
     margin-right: 40px;
+    margin-bottom: 10px;
     height: 30px;
-    border: 2px solid gray;
+    border: 2px solid #808080;
     padding: 3px;
     transition: 0.2s;
 }
 
 .linkcontainer {
-    background-color: rgb(122, 219, 219);
+    background-color: #7adbdb;
     padding-left: 90px;
     padding-top: 20px;
     display: flex;
@@ -76,8 +91,35 @@ h1 {
     cursor: default;
 }
 
+#jspage,
+#rubypage {
+    position: relative;
+    display: inline-block;
+    color: #00111c;
+}
+
+.jspage-contents,
+.rubypage-contents {
+    display: none;
+    position: absolute;
+    background-color: transparent;
+    min-width: 100px;
+    padding: 4px;
+    box-shadow: 3px 3px 4px grey;
+}
+
+.jspage-contents > a,
+.rubypage-contents > a {
+    color: #000000;
+    padding: 10px 10px 10px 10px;
+    text-decoration: none;
+    display: block;
+    color: #48555ec2;
+    transition: 0.5s;
+}
+
 .main {
-    background-color: rgb(122, 219, 219);
+    background-color: #7adbdb;
     flex-grow: 1;
     transition: 0.5s;
 }
@@ -95,16 +137,30 @@ h1 {
 /*Pseudo-classes*/
 
 .nightmodeBtn:hover {
-    background-color: rgb(177, 172, 187);
+    background-color: #b1acbb;
 }
 
 #rightarrow:hover {
-    color: rgb(99, 100, 100);
+    color: rgb(109, 110, 110);
+    font-size: 110px;
+    box-shadow: -10px 0px 10px -2px #f5f5f550 inset;
 }
 
 .nightmodeBtnSwitch:hover {
     background-color: #efeff0;
 }
+
+#jspage:hover .jspage-contents,
+#rubypage:hover .rubypage-contents {
+    display: block;
+}
+
+.jspage-contents > a:hover,
+.rubypage-contents > a:hover {
+    background-color: #69c5c5;
+    color: #00111c;
+}
+
 
 /*Toggle classes*/
 
@@ -114,14 +170,27 @@ h1 {
     justify-content: space-between;
     transition: 0.5s;
     color: #d4d7da;
+    height: 70px;
 }
 
 .nightmodeBtnSwitch {
     background-color: #b1acbb;
     transition: 0.5s;
+    border-radius: 10px;
+    margin-top: 18px;
+    margin-right: 40px;
+    height: 30px;
+    padding: 3px;
+    transition: 0.2s
 }
 
 .mainNightmode {
     background-color: #00253e;
     color: #d4d7da;
+}
+
+
+.nextVisible {
+    color: #405c5c;
+    font-size: 24px;
 }
